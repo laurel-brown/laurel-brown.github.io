@@ -15,5 +15,6 @@ p {
 
 img {
   float: left;
+  clear: both;
   width: 50%;
 }
