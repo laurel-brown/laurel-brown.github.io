@@ -2,6 +2,11 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+div.overview {
+  width: 90%;
+  margin: auto;
+}
+
 h1 {
   color: rgb(4, 0, 0);
   text-align: left;
