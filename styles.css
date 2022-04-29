@@ -38,7 +38,6 @@ abbr[data-original-title],abbr[title]{text-decoration:underline;text-decoration:
 
 summary{display:list-item}
 
-/*
 template{display:none}[hidden]{display:none!important}
 
 .ufo--portfolio-page{--bgColor:#fff;background-color:var(--bgColor)}
@@ -46,7 +45,120 @@ template{display:none}[hidden]{display:none!important}
 .ufo--container{width:1134px;max-width:100%;margin:0 auto;padding:0 24px
 }
 
-.ufo--page-hero{position:relative;width:100%;display:flex;flex-direction:column;--hoverColor:#00b8ff}.ufo--page-hero h1{font-family:var(--h1Font);font-size:var(--h1Size);font-weight:var(--h1Weight);font-style:var(--h1Style);line-height:var(--h1Height);color:var(--h1Color)}.ufo--page-hero h2,.ufo--page-hero h3{font-family:var(--h2Font);font-size:var(--h2Size);font-weight:var(--h2Weight);font-style:var(--h2Style);line-height:var(--h2Height);color:var(--h2Color)}.ufo--page-hero ol,.ufo--page-hero p,.ufo--page-hero ul{font-family:var(--p1Font);font-size:var(--p1Size);font-weight:var(--p1Weight);font-style:var(--p1Style);line-height:var(--p1Height);color:var(--p1Color);margin-bottom:0}.ufo--page-hero p:empty:after{content:"\00A0"}.ufo--page-hero a,.ufo--page-hero a:hover{color:var(--hoverColor)}.ufo--page-navbar{position:relative;z-index:2;height:max-content;width:100%}@media (max-width:768px){.ufo--page-navbar{justify-content:space-between;align-items:center;padding-top:24px;padding-bottom:24px}}.ufo--page-navbar .ufo--page-navbar-container{display:flex;flex-direction:row;width:100%}@media (max-width:768px){.ufo--page-navbar .ufo--page-navbar-container:not(.no-mob){position:fixed;top:-100%;left:0;height:100%;background-color:var(--bgColor);transition:top .2s ease-in-out;display:flex;flex-direction:column;align-items:center;justify-content:center}.ufo--page-navbar .ufo--page-navbar-container:not(.no-mob).on{top:0}}.ufo--page-hero-content{display:grid;grid-template-columns:repeat(12,minmax(10px,1fr));grid-column-gap:12px;position:relative}@media (min-width:768px){.ufo--page-hero-content{grid-column-gap:24px}}@media (max-width:768px){.ufo--page-hero-content{height:unset!important}}.ufo--page-navbar-id{display:none}@media (max-width:768px){.ufo--page-navbar-id{position:relative;z-index:11;display:block;font-size:18px;font-family:var(--h1Font);font-weight:var(--h1Weight);color:var(--buttonColor)}}.ufo--page-navbar-toggle{display:none}@media (max-width:768px){.ufo--page-navbar-toggle{position:relative;z-index:11;width:15px;display:flex;flex-direction:column;cursor:pointer;margint-left:auto}.ufo--page-navbar-toggle.on{width:15px;height:15px}.ufo--page-navbar-toggle.on span:first-child,.ufo--page-navbar-toggle.on span:nth-child(4){background-color:transparent}.ufo--page-navbar-toggle.on span:nth-child(2){transform:rotate(45deg) translate(2px,3px);width:16px}.ufo--page-navbar-toggle.on span:nth-child(3){transform:rotate(-45deg) translateY(-1px);width:16px}.ufo--page-navbar-toggle span{width:100%;height:1px;background-color:var(--buttonColor);margin-bottom:3px;transition:.2s ease-out;transition-property:transform}.ufo--page-navbar-toggle span:last-child{margin-bottom:0}}.ufo--page-navbar-item{position:relative;margin-right:24px;display:inline-flex;flex-direction:column;align-items:center;justify-content:space-between}.ufo--page-navbar-item:after{content:attr(data-text);content:attr(data-text)/"";height:0;visibility:hidden;overflow:hidden;user-select:none;pointer-events:none;font-weight:700;font-family:var(--buttonFont);font-size:var(--buttonSize);font-style:var(--buttonStyle);line-height:var(--buttonHeight)}@media speech{.ufo--page-navbar-item:after{display:none}}.ufo--page-navbar-item .btn{font-family:var(--buttonFont);font-size:var(--buttonSize);font-weight:var(--buttonWeight);font-style:var(--buttonStyle);line-height:var(--buttonHeight);color:var(--buttonColor);height:auto;border:none;background-color:transparent;text-transform:none;padding:0;white-space:normal;cursor:pointer}.ufo--page-navbar-item .btn:not(.editable):active,.ufo--page-navbar-item .btn:not(.editable):focus,.ufo--page-navbar-item .btn:not(.editable):hover{color:var(--hoverColor);border-color:var(--hoverColor);outline:none;font-weight:700}@media (max-width:768px){.ufo--page-navbar-item{margin:12px 0}}.
+.ufo--page-hero{
+    position:relative;width:100%;display:flex;flex-direction:column;--hoverColor:#00b8ff
+}
+
+.ufo--page-hero h1{
+    font-family:var(--h1Font);font-size:var(--h1Size);font-weight:var(--h1Weight);font-style:var(--h1Style);line-height:var(--h1Height);color:var(--h1Color)
+}
+
+.ufo--page-hero h2,.ufo--page-hero h3{
+    font-family:var(--h2Font);font-size:var(--h2Size);font-weight:var(--h2Weight);font-style:var(--h2Style);line-height:var(--h2Height);color:var(--h2Color)
+}
+
+.ufo--page-hero ol,.ufo--page-hero p,.ufo--page-hero ul{
+    font-family:var(--p1Font);font-size:var(--p1Size);font-weight:var(--p1Weight);font-style:var(--p1Style);line-height:var(--p1Height);color:var(--p1Color);margin-bottom:0
+}
+
+.ufo--page-hero p:empty:after{
+    content:"\00A0"
+}
+
+.ufo--page-hero a,.ufo--page-hero a:hover{
+    color:var(--hoverColor)
+}
+
+.ufo--page-navbar{
+    position:relative;z-index:2;height:max-content;width:100%
+}
+
+@media (max-width:768px){
+    .ufo--page-navbar{
+        justify-content:space-between;align-items:center;padding-top:24px;padding-bottom:24px
+    }
+}
+
+.ufo--page-navbar .ufo--page-navbar-container{
+    display:flex;flex-direction:row;width:100%
+}
+
+@media (max-width:768px){
+    .ufo--page-navbar .ufo--page-navbar-container:not(.no-mob){
+        position:fixed;top:-100%;left:0;height:100%;background-color:var(--bgColor);transition:top .2s ease-in-out;display:flex;flex-direction:column;align-items:center;justify-content:center
+    }
+    
+    .ufo--page-navbar .ufo--page-navbar-container:not(.no-mob).on{
+        top:0
+    }
+}
+
+.ufo--page-hero-content{
+    display:grid;grid-template-columns:repeat(12,minmax(10px,1fr));grid-column-gap:12px;position:relative
+}
+
+@media (min-width:768px){
+    .ufo--page-hero-content{
+        grid-column-gap:24px
+    }
+}
+
+@media (max-width:768px){
+    .ufo--page-hero-content{
+        height:unset!important
+    }
+}
+
+.ufo--page-navbar-id{
+    display:none
+}
+
+@media (max-width:768px){
+    .ufo--page-navbar-id{
+        position:relative;z-index:11;display:block;font-size:18px;font-family:var(--h1Font);font-weight:var(--h1Weight);color:var(--buttonColor)
+    }
+}
+
+.ufo--page-navbar-toggle{
+    display:none
+}
+
+@media (max-width:768px){
+    .ufo--page-navbar-toggle{
+        position:relative;z-index:11;width:15px;display:flex;flex-direction:column;cursor:pointer;margint-left:auto
+    }
+    
+    .ufo--page-navbar-toggle.on{
+        width:15px;height:15px
+    }
+    
+    .ufo--page-navbar-toggle.on span:first-child,.ufo--page-navbar-toggle.on span:nth-child(4){
+        background-color:transparent
+    }
+    
+    .ufo--page-navbar-toggle.on span:nth-child(2){
+        transform:rotate(45deg) translate(2px,3px);width:16px
+    }
+    
+    .ufo--page-navbar-toggle.on span:nth-child(3){
+        transform:rotate(-45deg) translateY(-1px);width:16px
+    }
+    
+    .ufo--page-navbar-toggle span{
+        width:100%;height:1px;background-color:var(--buttonColor);margin-bottom:3px;transition:.2s ease-out;transition-property:transform
+    }
+    
+    .ufo--page-navbar-toggle span:last-child{
+        margin-bottom:0
+    }
+}
+
+.ufo--page-navbar-item{
+    position:relative;margin-right:24px;display:inline-flex;flex-direction:column;align-items:center;justify-content:space-between
+}
+
+.ufo--page-navbar-item:after{
+    content:attr(data-text);content:attr(data-text)/"";height:0;visibility:hidden;overflow:hidden;user-select:none;pointer-events:none;font-weight:700;font-family:var(--buttonFont);font-size:var(--buttonSize);font-style:var(--buttonStyle);line-height:var(--buttonHeight)}@media speech{.ufo--page-navbar-item:after{display:none}}.ufo--page-navbar-item .btn{font-family:var(--buttonFont);font-size:var(--buttonSize);font-weight:var(--buttonWeight);font-style:var(--buttonStyle);line-height:var(--buttonHeight);color:var(--buttonColor);height:auto;border:none;background-color:transparent;text-transform:none;padding:0;white-space:normal;cursor:pointer}.ufo--page-navbar-item .btn:not(.editable):active,.ufo--page-navbar-item .btn:not(.editable):focus,.ufo--page-navbar-item .btn:not(.editable):hover{color:var(--hoverColor);border-color:var(--hoverColor);outline:none;font-weight:700}@media (max-width:768px){.ufo--page-navbar-item{margin:12px 0}}.
 
 ufo--page-hero-image
 {
@@ -79,7 +191,7 @@ ufo--page-hero-image
 
 @media (min-width:768px){
     .ufo--page-hero-image{grid-column:1/span 6;padding-bottom:0;grid-row:1}.ufo--page-hero-image.flipped{grid-column:7/span 6}.ufo--page-hero-image.fit img.hero-image{object-fit:contain}.ufo--page-hero-image.fit-margin{margin:48px}.ufo--page-hero-image.fit-margin img.hero-image{object-fit:contain}.ufo--page-hero-image.cover{width:unset;position:relative;overflow:unset;height:100%;margin:0}.ufo--page-hero-image.cover img.hero-image{width:50vw!important;max-width:50vw!important;position:absolute;object-fit:cover;right:0}.ufo--page-hero-image.cover.flipped img.hero-image{left:0}}.ufo--page-hero-bio{grid-row:1;grid-column:1/span 12;display:flex;flex-direction:column;justify-content:center;padding:48px 0;position:relative;z-index:1}.ufo--page-hero-bio.view{word-wrap:break-word;white-space:pre-wrap}@media (min-width:768.5px){.ufo--page-hero-bio{grid-row:1;grid-column:7/span 6}.ufo--page-hero-bio.flipped{grid-column:1/span 6}}.ufo--page-hero-bio.full-w{grid-column:1/span 12;text-align:center}.ufo--page-hero-bio.top{justify-content:flex-start}.ufo--page-hero-bio.bottom,.ufo--page-links{justify-content:flex-end}.ufo--page-links{grid-column:1/span 12;margin-left:auto}@media (max-width:768px){.ufo--page-links{margin:48px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center}}.ufo--page-links a{display:inline-flex;flex-direction:column;align-items:center;justify-content:space-between;cursor:pointer;margin-left:24px;text-transform:capitalize;font-family:var(--buttonFont);font-size:var(--buttonSize);font-weight:var(--buttonWeight);font-style:var(--buttonStyle);line-height:var(--buttonHeight);color:var(--buttonColor)}@media (max-width:768px){.ufo--page-links a{margin:12px 0}}.ufo--page-links a:after{content:attr(data-text);content:attr(data-text)/"";height:0;visibility:hidden;overflow:hidden;user-select:none;pointer-events:none;font-weight:700;font-family:var(--buttonFont);font-size:var(--buttonSize);font-style:var(--buttonStyle);line-height:var(--buttonHeight)}@media speech{.ufo--page-links a:after{display:none}}.ufo--page-links a:first-child{margin-left:0!important}.ufo--page-links a:last-child{margin-right:0!important}.ufo--page-links a:hover{color:var(--hoverColor)}.ufo--page-links a .fa-website:before{content:"\f0ac"}.ufo--page-links a .fa{text-align:center}.ufo--page-links a .fa-email:before{content:"\f0e0";line-height:20px}.ufo--page-hero-background{position:absolute;width:100vw;height:100%;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;z-index:0;background-position:50%;background-repeat:no-repeat;background-size:cover;background-attachment:fixed}@media (min-width:768.5px){.ufo--page-hero-background{grid-row:1}}.ufo--page-hero-background.overlay:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;background-color:var(--colorOverlay)}.ufo--page-content .ufo--p-container-fluid{width:100%}@media (min-width:768.5px){.ufo--page-content .ufo--p-container-fluid{max-width:calc(100% - 48px)}}@media (min-width:1134px){.ufo--page-content .ufo--p-container-fluid{max-width:1086px!important}}.ufo--page-content .ufo--case-study-container:not(.empty){margin-left:-24px;margin-right:-24px}@media (min-width:1110px){.ufo--page-content .ufo--case-study-container:not(.empty){width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}}.profile-footer{min-height:100px;width:100%;background-color:var(--bgColor)}.profile-footer .profile-footer-content{min-height:100px;padding:10px 15px;display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap}.profile-footer .profile-footer-content .footer-url{font-size:16px;color:var(--buttonColor);font-family:var(--buttonFont);line-height:1;margin:10px;text-transform:uppercase;transition:color .2s ease-out;cursor:pointer}.profile-footer .profile-footer-content .footer-url:hover{color:var(--hoverColor)}.profile-footer .profile-footer-content .footer-icon{font-size:14px;border-radius:50%;overflow:hidden}.profile-footer .profile-footer-content .footer-icon:last-child{margin-right:0}.profile-footer .profile-footer-content .footer-icon .fa-website:before{content:"\f0ac"}.profile-footer .profile-footer-content .footer-icon .fa{line-height:22px;text-align:center}.profile-footer .profile-footer-content .footer-icon .fa-email:before{content:"\f0e0";line-height:20px}@media (min-width:576px){.profile-footer{height:100px;width:100%}.profile-footer .profile-footer-content{display:flex;align-items:center;justify-content:center;height:100px;padding:0}.profile-footer .profile-info .profile-picture{max-height:none}}.ufo--portfolio-page .empty-collection .empty-illustration{background:url(/dist/images/empty-collection.png) 50% no-repeat;background-size:contain;width:410px;height:406px;max-width:100%;margin:20px auto}.ufo--portfolio-page .empty-collection .centered-button{display:flex;justify-content:center;margin-top:30px}.ufo--portfolio-page .empty-collection h2{font-size:1.4rem;font-family:Source Sans Pro,sans-serif;font-weight:700;line-height:.91;color:#6b797f;text-align:center;margin-bottom:10px;font-style:unset}.ufo--portfolio-page .empty-collection p{font-size:1rem;font-family:Source Sans Pro,sans-serif;font-weight:400;line-height:1.25;color:#6b797f;text-align:center}.ufo--portfolio-page .empty-collection p a{color:#00b8ff;font-weight:700;text-decoration:none}.ufo--portfolio-page .empty-collection p a:hover{text-decoration:none}.ufo--portfolio-page .empty-collection .btn{display:inline-block;height:36px;padding:8px 16px;font-family:Lato,sans-serif;font-size:.75rem;font-weight:700;line-height:1.5;text-align:center;color:#fff;background-color:#00b8ff;border-radius:2px;text-transform:uppercase;cursor:pointer;border:none;transition:background-color .2s ease-out;white-space:nowrap;vertical-align:middle;user-select:none}
-    */
+    
 
     .theme_two{--borderColor:rgba(40,42,43,0.2);overflow:hidden}.theme_two .ufo--page-hero{padding-top:0}.theme_two .ufo--page-hero .ufo--page-hero-content{grid-column-gap:12px}@media (max-width:768px){.theme_two .ufo--page-hero.theme-default{padding-top:24px}}@media (min-width:768px){.theme_two .ufo--page-hero.theme-default .ufo--page-hero-bio{padding-top:100px;padding-bottom:100px}}@media (min-width:768px){.theme_two .ufo--page-hero-image{grid-column:1/span 5}.theme_two .ufo--page-hero-image.flipped{grid-column:8/span 5;grid-row:1}}.theme_two .ufo--page-hero-image.theme-default{grid-row:unset;padding-bottom:0}.theme_two .ufo--page-hero-image.theme-default.fix-h img.hero-image{height:336px;max-height:336px}@media (min-width:768px){.theme_two .ufo--page-hero-image.theme-default{padding:100px 0}.theme_two .ufo--page-hero-image.theme-default.fix-h img.hero-image{height:660px;max-height:660px}}.theme_two .ufo--page-hero-image.theme-default.flipped{grid-row:2}@media (min-width:768px){.theme_two .ufo--page-hero-image.theme-default.flipped{grid-row:1}}
     
