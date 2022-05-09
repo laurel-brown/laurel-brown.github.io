@@ -1,241 +1,588 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="app-version" content="&quot;2022-05-06T21:31:02.105Z - ba117f10b8b0bbf1b805f7f4864dc488a15bcb3a&quot;"><meta name="_csrf" content="fxGGTHDE-XNESnhedi8bTZcLR-qt8CQbF-aY"><meta name="hostedSubdomain" content="webflow.io"><link rel="manifest" type="application/manifest+json" href="/manifest.json"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#3490eb"><link rel="stylesheet" type="text/css" href="https://d3e54v103j8qbb.cloudfront.net/gen/css/designer.4b972d3950.css"><title>Webflow - Laurel Brown - UX Researcher | Creative Technologist</title><link rel="icon" href="https://d3e54v103j8qbb.cloudfront.net/static/designer_favicon.5ea478d03e.png"><script>//- attributes == {apiKey: "", source: "", hostUrl: "", authenticated: true/false}
-var source = 'designer';
-var hostUrl = 'https://webflow.com';
-var authenticated = Boolean();
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+        <link rel="stylesheet" href="styles2.css">
 
-var forceFalse = false;
-// When ipstack is not loaded window.wf_continentCode is undefined and
-// segment consent manager doesn't require consent. We assume consent for
-// authenticated users
-switch (source) {
-  case 'dashboard':
-    // If in iframe we don't want consent banner to pop up so we don't load ipstack,
-    // but we also use parent window consent manager settings for analytics
-    if (!authenticated && !isInIframe()) {
-      initCallbacks();
-      loadIpStack();
+
+
+<title>Player research throughout game development</title>
+<meta name="description" content="I’m a UX reseracher. I’m interested in how feelings influence behaviors and how the past can inform the future." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Laurel - UX researcher" />
+<meta property="og:description" content="I’m a UX reseracher. I’m interested in how feelings influence behaviors and how the past can inform the future." />
+<meta property="og:image" content="https://storage.googleapis.com/uxfolio/6211257a6a240c0003890ffd/collections/15dbe4b6-5c96-4b31-853e-c617f517adb1/social/AJCFq5poM8IdErtV.jpg" />
+<meta property="og:url" content="https://uxfol.io/p/f517adb1/about" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laurel - UX researcher">
+<meta name="twitter:description" content="I’m a UX reseracher. I’m interested in how feelings influence behaviors and how the past can inform the future.">
+<meta name="twitter:image" content="https://storage.googleapis.com/uxfolio/6211257a6a240c0003890ffd/collections/15dbe4b6-5c96-4b31-853e-c617f517adb1/social/AJCFq5poM8IdErtV.jpg">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+
+<style>
+    .ufo--page-hero,
+    .projects-list {
+        --h1Font: "Monsterrat";
+        --h1Color: #282a2b;
+        --h1Weight: normal;
+        --h1Style: normal;
+        
+
+            --h1Size: 34px;
+            --h1Height: 36px;
+        --h2Font: "Work Sans";
+        --h2Color: #778390;
+        --h2Weight: normal;
+        --h2Style: normal;
+        
+
+            --h2Size: 21px;
+            --h2Height: 23px;
+        --p1Font: "Work Sans";
+        --p1Color: #8d98a1;
+        --p1Weight: normal;
+        --p1Style: normal;
+        
+
+            --p1Size: 17px;
+            --p1Height: 26px;
+        --projectTitleFont: "Work Sans";
+        --projectTitleColor: #282a2b;
+        --projectTitleWeight: bold;
+        --projectTitleStyle: normal;
+        
+
+        --projectSubTitleFont: "Work Sans";
+        --projectSubTitleColor: #282a2b;
+        --projectSubTitleWeight: normal;
+        --projectSubTitleStyle: normal;
+        
+
+        --buttonFont: "Work Sans";
+        --buttonColor: #8d98a1;
+        --buttonWeight: bold;
+        --buttonStyle: normal;
+        --borderColor: #8d98a133;
+
+            --buttonSize: 12px;
+            --buttonHeight: 21px;
+        --pageTitleFont: "Work Sans";
+        --pageTitleColor: #282a2b;
+        --pageTitleWeight: normal;
+        --pageTitleStyle: normal;
+        
+
+            --pageTitleSize: 34px;
+            --pageTitleHeight: 39px;
+
+        --projectTitleSize: 20px;
+        --projectTitleHeight: 23px;
+        --projectSubTitleSize: 16px;
+        --projectSubTitleHeight: 19px;
     }
-    break;
-  case 'designer-preview':
-    // When loading preview.webflow.com/... we don't know if a user is
-    // authenticated or not so we need to call this extra endpoint
-    initCallbacks();
-    isAuthenticated(function(authenticated) {
-      if (!authenticated) {
-        loadIpStack();
-      } else {
-        // Needed to resolve wf_isEU
-        forceFalse = true;
-      }
-    });
-    break;
-  // Default: do nothing
-  // Users in Designer are always authenticated so we don't need to detect
-  // EU continent because we assume consent
-}
 
-function initCallbacks() {
-  window.wf_onDetectContinent = function(data) { window.wf_continentCode = data.continent_code; };
 
-  window.wf_isEU = function() {
-    if (typeof window.wf_continentCode === 'string' || typeof Promise === "undefined") {
-      return window.wf_continentCode === 'EU';
-    }
-    // There could be a race condition and wf_continentCode be undefined
-    return new Promise(function(resolve) {
-      var i = 0;
-      var interval = setInterval(function() {
-        if (typeof window.wf_continentCode === 'string' || i++ >= 50 || forceFalse) {
-          // Resolve it if:
-          // - ipstack has loaded and window.wf_continentCode is defined
-          // - 5 seconds passed and wf_continentCode is still undefined
-          // - forceFalse is true (used in preview sites when user is authenticated)
-          clearInterval(interval);
-          return resolve(window.wf_continentCode === 'EU');
+
+
+        .ufo--portfolio-page.theme_two .ufo--user-projects-list .project .project-name .project-title {
+            --projectTitleColor: #282a2b;
         }
-      }, 100);
-    });
-  };
-}
 
-function loadIpStack() {
-  var head = document.getElementsByTagName("head")[0];
-  var ipstackScript = document.createElement("script");
-  ipstackScript.src = "https://api.ipstack.com/check?access_key=53038fede8e664ed0b2e5274047e23a8&fields=continent_code&callback=wf_onDetectContinent";
-  head.appendChild(ipstackScript);
-}
+        .ufo--portfolio-page.theme_two .ufo--user-projects-list .project .project-name .project-subtitle {
+            --projectSubTitleColor: #282a2b;
+        }
 
-function isAuthenticated(cb) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", hostUrl + '/api/user/readOnlyData');
-  xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  xmlhttp.withCredentials = true;
-  xmlhttp.onload = function() {
-    if (xmlhttp.status === 200) {
-      cb(true);
-    } else {
-      cb(false);
-    }
-  };
-  xmlhttp.send();
-}
 
-function isInIframe() {
-  try {
-    return window.self !== window.top;
-  } catch (e) {
-    return true;
-  }
-}</script><script type="text/javascript">!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://analytics.webflow.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="o7IYLBfvZF4my8WYgLoerBVCSRYbBOfp";analytics._cdn="https://analytics.webflow.com";;analytics.SNIPPET_VERSION="4.15.3";
-//- Purposefully doesn't include 'analytics.load(API_TOKEN)' here, as this is deferred to segment-consent-manager
-analytics.page();
-}}();</script></head><body class="wf-control"><div id="preloader"><div class="preloader-progress"><div class="preloader-container"><svg width="300" height="300"><defs></defs><circle cx="150" cy="150" fill="none" r="120" stroke="#404040" stroke-width="6px"></circle><circle id="preloader-progress" cx="150" cy="150" r="120" fill="none" stroke="#178df7" stroke-width="6px" stroke-dasharray="942.477" stroke-dashoffset="942.477" class="fill">  </circle><image id="preloader-brand" x="80" y="36" width="140" height="36" xlink:href="https://d3e54v103j8qbb.cloudfront.net/public/webflow-logo-loader.3bd3dd30fb.svg" transform="rotate(90,100,100)" class="preloader-brand preloader-brand"></image></svg></div><text id="preloader-message" class="preloader-message preloader-message">Making it pop</text></div></div><script type="text/javascript">window.performance && typeof performance.mark === 'function' &&
-  performance.mark('start js:execute-preloader');</script><script type="text/javascript">var Preloader=function(e,t,a){var s=e[t](a);var r=e[t](a+"-message");var i=e[t](a+"-progress");function n(e,t){if(i&&r){i.style.transition="none";var a=i.r.baseVal.value;var s=a*2*Math.PI;var n=s-e/100*s;i.style.transition="stroke-dashoffset .25s linear";i.style.strokeDashoffset=n;if(t){r.innerHTML=t}}}function o(){if(s){s.classList.add("inactive");var t=600;s.style.transition="opacity 600ms ease-out";s.style.opacity="0";setTimeout(function(){var e=s;e.classList.add("hidden");setTimeout(function(){if(e.parentNode){e.parentNode.removeChild(e)}s=r=null},t*5)},t)}}return{update:n,destroy:o}}(document,"getElementById","preloader");
-</script><script type="text/javascript">window.performance && typeof performance.mark === 'function' &&
-  performance.mark('end js:execute-preloader');
-</script><div id="workspace" style="height: 100%"></div><div id="debug-overlay"></div><iframe id="responsive-images-iframe" src="/site/empty.html"></iframe><div id="designer-app-react-mount"></div><div id="preload-assets"></div><div id="drag-ghost"></div><div id="wf-eyedropper-button"></div><script type="text/javascript">if (typeof Preloader !== 'undefined') Preloader.update(14);
-</script><script type="text/javascript">window.performance && typeof performance.mark === 'function' &&
-  performance.mark('start js:execute-app');
+        .profile-footer {
+            --buttonFont: Work Sans;
+            --buttonColor: #8d98a1;
+        }
 
-  </script><script type="text/javascript" src="https://d3e54v103j8qbb.cloudfront.net/gen/js/webflow-designer-bugsnag.min.851590b6c5.js" crossorigin="anonymous"></script><script type="text/plain" id="wf-initial-data">{&quot;persistentUIState&quot;:{&quot;embedEditorSettingsLineWrapping&quot;:false,&quot;permanentlyDismissedNotifications&quot;:[&quot;SYMBOL_OVERRIDES_LEARN_MORE&quot;,&quot;SYMBOL_OVERRIDES_LEARN_USING_INSTANCE_FIELDS&quot;,&quot;GRID_LEARN_MORE&quot;],&quot;permanentlyDismissedNotes&quot;:[&quot;EXPERIMENTAL_BROWSER_NOTE_Mozilla Firefox;&quot;,&quot;SEARCH_EXCLUDE_NOTE&quot;],&quot;auditResultsIgnored&quot;:[],&quot;auditResultsRead&quot;:[],&quot;dockedPanelSettings&quot;:{&quot;navigatorShowing&quot;:false,&quot;navigatorDocked&quot;:true,&quot;navigatorWidth&quot;:172},&quot;logStoreOption&quot;:&quot;disabled&quot;,&quot;addTabVisibilityStates&quot;:{},&quot;pageVisibilityStates&quot;:{&quot;static&quot;:true,&quot;cms&quot;:true,&quot;ecommerce&quot;:true,&quot;user&quot;:true,&quot;utility&quot;:true},&quot;pageExpandedFolders&quot;:[&quot;__ROOT__&quot;,&quot;622e430525169e3e6f948d0f&quot;,&quot;623f280a7503bab957954987&quot;],&quot;onboardingSeen&quot;:false,&quot;editorExposureV2Seen&quot;:false,&quot;enabledProjectCardDashboardV1&quot;:true,&quot;hasBeenRedirectedToSurvey&quot;:false,&quot;experimentalDesignerChangesV2&quot;:true,&quot;numDesignerVisit&quot;:21,&quot;tutorials&quot;:[{&quot;activeTutorial&quot;:&quot;nux-flexbox-extended&quot;,&quot;stepsCompleted&quot;:[&quot;layout-start-tutorial&quot;,&quot;layout-drag-container&quot;,&quot;layout-container-added&quot;,&quot;layout-container-height&quot;,&quot;layout-add-elements&quot;,&quot;layout-drag-heading&quot;,&quot;layout-heading-added&quot;,&quot;layout-drag-button&quot;,&quot;layout-container-section&quot;,&quot;style-adjust-layout-in-style-panel&quot;,&quot;style-adjust-flexbox&quot;,&quot;style-adjust-flexbox-alignment&quot;,&quot;style-adjust-flexbox-justify&quot;,&quot;style-start-tutorial-popover&quot;,&quot;style-select-heading-on-canvas&quot;,&quot;style-adjust-styles-in-style-panel&quot;,&quot;style-scroll-down-canvas&quot;,&quot;style-select-edit-button-on-canvas&quot;,&quot;style-use-classes-to-save-and-reuse&quot;,&quot;style-adjust-button-padding-left&quot;,&quot;style-adjust-button-padding-right&quot;,&quot;style-updating-classes&quot;,&quot;style-scroll-up-canvas&quot;,&quot;style-select-get-started-button-on-canvas&quot;,&quot;style-apply-class-to-button&quot;,&quot;style-using-classes&quot;,&quot;responsive-start-tutorial-popover&quot;,&quot;responsive-scroll-up-canvas&quot;,&quot;responsive-select-heading-on-canvas&quot;,&quot;responsive-adjust-heading-color&quot;,&quot;responsive-view-tablet-breakpoint&quot;,&quot;responsive-styles-cascade-down&quot;,&quot;responsive-adjust-heading-size&quot;,&quot;responsive-check-mobile-portrait&quot;,&quot;responsive-editing-styles-across-breakpoints&quot;,&quot;responsive-check-desktop-portrait&quot;,&quot;responsive-editing-styles-across-breakpoints-2&quot;,&quot;responsive-toggle-preview-mode&quot;,&quot;responsive-preview-device-breakpoint&quot;,&quot;responsive-drag-canvas-test-fluidity&quot;,&quot;responsive-open-publish-modal-final&quot;],&quot;currentStepId&quot;:&quot;publish-success-end-modal&quot;,&quot;resumedCount&quot;:0,&quot;status&quot;:&quot;completed&quot;,&quot;sites&quot;:[&quot;622e2adf6560bb94c8975dc2&quot;]},{&quot;activeTutorial&quot;:&quot;__contextual_tutorial__box-model-checklist&quot;,&quot;stepsCompleted&quot;:[&quot;box-model&quot;],&quot;currentStepId&quot;:&quot;success-end-modal&quot;,&quot;resumedCount&quot;:0,&quot;status&quot;:&quot;completed&quot;,&quot;sites&quot;:[&quot;622e2d548b0d9b565b400ba0&quot;]},{&quot;activeTutorial&quot;:&quot;__contextual_tutorial__symbols-templates&quot;,&quot;stepsCompleted&quot;:[&quot;symbols&quot;],&quot;currentStepId&quot;:&quot;success-end-modal&quot;,&quot;resumedCount&quot;:0,&quot;status&quot;:&quot;completed&quot;,&quot;sites&quot;:[&quot;622e2d548b0d9b565b400ba0&quot;]},{&quot;activeTutorial&quot;:&quot;__contextual_tutorial__classes-checklist&quot;,&quot;stepsCompleted&quot;:[&quot;classes&quot;],&quot;currentStepId&quot;:&quot;success-end-modal&quot;,&quot;resumedCount&quot;:0,&quot;status&quot;:&quot;completed&quot;,&quot;sites&quot;:[&quot;622e2d548b0d9b565b400ba0&quot;]}]},&quot;activeTime&quot;:8204,&quot;userId&quot;:&quot;622e2abdc171d83cd8de03f2&quot;,&quot;userMeta&quot;:{&quot;role&quot;:&quot;other&quot;,&quot;build&quot;:[&quot;portfolio-agency&quot;],&quot;persona&quot;:&quot;other&quot;,&quot;codingExperienceMap&quot;:&quot;medium&quot;,&quot;coding experience&quot;:&quot;medium&quot;,&quot;client work&quot;:[&quot;self&quot;],&quot;pre-checked email opt-in&quot;:true,&quot;email opt-in&quot;:true,&quot;number of steps&quot;:6,&quot;company size&quot;:null,&quot;onboarding questionnaire version&quot;:&quot;August-2021&quot;,&quot;onboarding questionnaire submitted&quot;:&quot;2022-03-13T17:33:19.408Z&quot;,&quot;persona server-side&quot;:&quot;other&quot;,&quot;last project created&quot;:&quot;2022-03-26T14:49:47.666Z&quot;,&quot;last open designer&quot;:&quot;2022-05-08T23:48:54.314Z&quot;,&quot;last cross-site paste&quot;:&quot;2022-03-27T14:56:07.774Z&quot;},&quot;userEventsToken&quot;:&quot;622e2abdc171d83cd8de03f2:l2xz1cl2:39/4YGvjrrQA9xqBkM3DrNxX3+dkzLVZpMACcltEuyU=&quot;,&quot;experimentAssignments&quot;:[{&quot;experiment&quot;:&quot;growth_core_designer_changes_2022_01&quot;,&quot;variant&quot;:&quot;control&quot;,&quot;inRollout&quot;:false,&quot;rollout&quot;:1,&quot;status&quot;:200},{&quot;experiment&quot;:&quot;growth_quick_add_prebuilt_2022_01&quot;,&quot;variant&quot;:&quot;control&quot;,&quot;inRollout&quot;:false,&quot;rollout&quot;:1,&quot;status&quot;:200},{&quot;experiment&quot;:&quot;growth_quick_add_prebuilt_2022_04&quot;,&quot;variant&quot;:&quot;control&quot;,&quot;inRollout&quot;:false,&quot;rollout&quot;:0,&quot;status&quot;:200},{&quot;experiment&quot;:&quot;growth_a_a_designer_2022_04&quot;,&quot;variant&quot;:&quot;control&quot;,&quot;inRollout&quot;:true,&quot;rollout&quot;:1,&quot;status&quot;:200}]}
-</script><script type="text/javascript">function htmlDecode(input) {
-  var doc = new DOMParser().parseFromString(input, "text/html");
-  return doc.documentElement.textContent;
-}
-var initialDataEl = document.getElementById('wf-initial-data');
-var initialData = {};
-try {
-  initialData = JSON.parse(htmlDecode(initialDataEl.innerHTML));
-} catch (e) {
-  console.log("Failed to parse initial data");
-}
-window.webflowInitialData = initialData;
-window.webflowUserEventsToken = initialData.userEventsToken;
-window.datadogRumConfig = {"sampleRate":50,"env":"prod","version":"main-ba117f10b8b0bbf1b805f7f4864dc488a15bcb3a","trackInteractions":true,"allowedTracingOrigins":["https://webflow.com","http://webflow.com","https://www.webflow.com","http://webflow.com"]};
-</script><script type="text/javascript" src="https://d3e54v103j8qbb.cloudfront.net/gen/js/webflow-designer.min.220e668021.js" crossorigin="anonymous"></script><script type="text/javascript">window.performance && typeof performance.mark === 'function' &&
-  performance.mark('end js:execute-app');
-</script><script>window.consentManagerConfig = function(exports) {
-  var React = exports.React
-  var bannerContent = React.createElement(
-    "span",
-    null,
-    "We use cookies (and other similar technologies) to improve your experience on our site. By using this website you agree to our",
-    " ",
-    React.createElement(
-      "a",
-      { href: '/legal/cookie-policy', target: "_blank" },
-      "Cookie Policy"
-    ),
-    "."
-  );
-  var preferencesDialogTitle = 'Cookie Preferences'
-  var preferencesDialogContent = 'We use data collected by cookies and JavaScript libraries to improve the functionality of the Webflow Dashboard, deliver personalized advertisements, and increase the overall performance of our service.'
-  var cancelDialogTitle = 'Are you sure you want to cancel?'
-  var cancelDialogContent = React.createElement(
-    'span',
-    null,
-    'Your preferences have not been saved. By continuing to use our website, you՚re agreeing to our',
-    ' ',
-    React.createElement(
-      'a',
-      {href: '/legal/cookie-policy', target: '_blank'},
-      'Cookie Policy'
-    ),
-    '.'
-  )
-  var defaultDestinationBehavior = 'imply'
 
-  return {
-    container: '#consent-container',
-    writeKey: 'o7IYLBfvZF4my8WYgLoerBVCSRYbBOfp',
-    cdnHost: 'analytics.webflow.com',
-    shouldRequireConsent: function () {
-      // This is set in ipstack
-      return typeof window.wf_isEU === 'function'
-        ? window.wf_isEU()
-        : false;
-    },
-    bannerContent: bannerContent,
-    preferencesDialogTitle: preferencesDialogTitle,
-    preferencesDialogContent: preferencesDialogContent,
-    cancelDialogTitle: cancelDialogTitle,
-    cancelDialogContent: cancelDialogContent,
-    defaultDestinationBehavior: defaultDestinationBehavior,
-    onError: function(err) { console.error('SegmentConsentManager', err); },
-    closeBehavior: function(categories) {
-      return categories; // This sets them to the default value
-    },
-  }
-}
 
-var body = document.getElementsByTagName("body")[0];
-var consentScript = document.createElement("script");
-consentScript.setAttribute(
-  "src",
-  "https://unpkg.com/@segment/consent-manager@4.5.1/standalone/consent-manager.js"
-);
-consentScript.setAttribute(
-  "integrity",
-  "sha384-6m1+pfvSflZ20rCXvmOQ340ZQ4K4peogarq/HMfzcCXyB6ngUjpm3PuCGwvQy87Y"
-);
-consentScript.setAttribute("crossorigin", "anonymous");
-consentScript.setAttribute("defer", "defer");
-body.appendChild(consentScript);
-</script><div id="consent-container"></div><script type="text/javascript">(function() {
-  function _objectExtend(dest, src) {
-    for (var key in src) {
-      if (Object.prototype.hasOwnProperty.call(src, key)) {
-        dest[key] = src[key];
-      }
+        .ufo--portfolio-page.theme_two .ufo--user-projects-list .project .project-name .project-title {
+            --h2Color: #778390;
+        }
+
+
+
+        .ufo--portfolio-page.theme_two .ufo--user-projects-list .project .project-name .project-subtitle {
+            --p1Color: #8D98A1;
+        }
+
+
+
+    @media (min-width: 768px) {
+        .ufo--page-hero,
+        .projects-list {
+            --h1Size: 48px;
+            --h1Height: 51px;
+            --h2Size: 30px;
+            --h2Height: 33px;
+            --p1Size: 24px;
+            --p1Height: 37px;
+            --projectTitleSize: 30px;
+            --projectTitleHeight: 35px;
+            --projectSubTitleSize: 18px;
+            --projectSubTitleHeight: 27px;
+            --buttonSize: 12px;
+            --buttonHeight: 15px;
+            --pageTitleSize: 48px;
+            --pageTitleHeight: 55px;
+        }
     }
 
-    return dest;
-  }
+            @media (min-width: 1025px) {
+                .projects-list .project .project-name .project-title {
+                    color: var(--projectTitleColor) !important;
+                }
+            }
+            @media (min-width: 1025px) {
+                .projects-list .project .project-name .project-subtitle {
+                    color: var(--projectSubTitleColor) !important;
+                }
+            }
 
-  var a_uid="622e2abdc171d83cd8de03f2";
-  var a_pl="free";
-  var a_cr="Sun Mar 13 2022 17:32:45 GMT+0000 (Coordinated Universal Time)";
-  var a_school="";
+            .ufo--about-page .ufo--about-header .back {
+                --p1Color: #8d98a1;
+            }
+            .ufo--about-page .about-title .about-title-container,
+            .ufo--about-page .about-title .about-title-container .title,
+            .ufo--about-page .ufo--about-header .back {
+            --h1Font: "Work Sans";
+            --h1Color: #282a2b;
+            --h1Weight: normal;
+            --h1Style: normal;
+            --h1Size: 34px;
+            --h1Height: 39px;
+            }
+            @media (min-width: 768px) {
+                .ufo--about-page .about-title .about-title-container,
+                .ufo--about-page .about-title .about-title-container .title {
+                    --h1Size: 48px;
+                    --h1Height: 55px;
+                }
+            }
 
-  // This is useful to quickly access user variables via window object
-  var _dashboard_vars = {
-    subscriptionPlan: a_pl,
-    created: a_cr,
-  };
 
-  window.wm_userRole = _dashboard_vars;
 
-  // Here we define user properties that are easier to define on the
-  // client side
-  var _user_meta = {
-    'last open dashboard': new Date()
-  };
+    .ufo--case-study-container,
+    .ufo--about-header .about-title .title {
+            --h1Font: "Work Sans";
+            --h1Color: #424242;
+            --h1Weight: normal;
+            --h1Style: normal;
 
-  if (typeof dashboard != 'undefined' && dashboard.queryObj().school) {
-    // school discount
-    _user_meta['School Discount'] = a_school ? true : false;
-  }
+                --h1Size: 34px;
+                --h1Height: 39px;
+            --h2Font: "Work Sans";
+            --h2Color: #778390;
+            --h2Weight: normal;
+            --h2Style: normal;
 
-  // TODO: remove alias call once we don't use mixpanel anymore
-  if (typeof dashboard != 'undefined' && dashboard && dashboard.queryObj().a == 1) {
-    // Every redirect after signup MUST use ?a=1 in the url query
-    // so that alias() is called. Without alias, analytics funnels will
-    // break because events have different distinct_id
-    analytics.alias(a_uid);
-  }
+                --h2Size: 28px;
+                --h2Height: 30px;
+            --h3Font: "Work Sans";
+            --h3Color: #778390;
+            --h3Weight: normal;
+            --h3Style: normal;
 
-  // Only call identify on dashboard paths
-  var pathname = window.location.pathname;
-  if (/^\/dashboard(\/.*)?$/.test(pathname) ||
-      /^\/websites(\/.*)?$/.test(pathname) ||
-      /^\/designers(\/.*)?$/.test(pathname) ||
-      /^\/website(\/.*)?$/.test(pathname) ||
-      /^\/team(\/.*)?$/.test(pathname)) {
-    analytics.identify(a_uid, _user_meta);
+                --h3Size: 17px;
+                --h3Height: 20px;
+            --h4Font: "Work Sans";
+            --h4Color: #778390;
+            --h4Weight: normal;
+            --h4Style: normal;
 
-    // Idenfity user on Tatari for TV ads conversions
-    if (window.tatari && typeof window.tatari.identify === 'function') {
-      window.tatari.identify(a_uid);
+                --h4Size: 16px;
+                --h4Height: 16px;
+            --p1Font: "Work Sans";
+            --p1Color: #8D98A1;
+            --p1Weight: normal;
+            --p1Style: normal;
+
+                --p1Size: 16px;
+                --p1Height: 1.5; 
+            --p2Font: "Work Sans";
+            --p2Color: #989A9A;
+            --p2Weight: normal;
+            --p2Style: italic;
+
+                --p2Size: 16px;
+                --p2Height: 1.5; 
     }
-  }
-})();</script><link href="//fonts.googleapis.com/css?family=Roboto:400,300,500|Inconsolata:400,700" rel="stylesheet" type="text/css"></body></html>
+
+    @media (min-width: 576px) {
+        .ufo--about-header .about-title .title {
+            --h3Size: 25px;
+            --h3Height: 28px;
+            --p1Size: 18px;
+            --p1Height: 21px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .ufo--case-study-container,
+        .ufo--about-header .about-title .title {
+            --h1Size: 48px;
+            --h1Height: 55px;
+            --h2Size: 40px;
+            --h2Height: 43px;
+            --h3Size: 24px;
+            --h3Height: 29px;
+            --h4Size: 20px;
+            --h4Height: 23px;
+            --p1Size: 16px;
+            --p1Height: 27px;
+            --p2Size: 16px;
+            --p2Height: 21px;
+        }
+    }
+
+
+</style>
+<style>
+        .ufo--case-study-container,
+    .ufo--about-header .about-title .title
+ {
+        --h1Font: "Work Sans";
+        --h1Color: #424242;
+        --h1Weight: normal;
+        --h1Style: normal;
+
+            --h1Size: 34px;
+                --h1Height: 39px;
+        --h2Font: "Work Sans";
+        --h2Color: #778390;
+        --h2Weight: normal;
+        --h2Style: normal;
+
+            --h2Size: 28px;
+                --h2Height: 30px;
+        --h3Font: "Work Sans";
+        --h3Color: #778390;
+        --h3Weight: normal;
+        --h3Style: normal;
+
+            --h3Size: 17px;
+                --h3Height: 20px;
+        --h4Font: "Work Sans";
+        --h4Color: #778390;
+        --h4Weight: normal;
+        --h4Style: normal;
+
+            --h4Size: 16px;
+                --h4Height: 16px;
+        --p1Font: "Work Sans";
+        --p1Color: #8D98A1;
+        --p1Weight: normal;
+        --p1Style: normal;
+
+            --p1Size: 16px;
+                --p1Height: 1.5; 
+        --p2Font: "Work Sans";
+        --p2Color: #989A9A;
+        --p2Weight: normal;
+        --p2Style: italic;
+
+            --p2Size: 16px;
+                --p2Height: 1.5; 
+    }
+
+    @media (min-width: 576px) {
+        .ufo--about-header .about-title .title
+ {
+            --h3Size: 25px;
+            --h3Height: 28px;
+            --p1Size: 18px;
+            --p1Height: 21px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .ufo--case-study-container,
+        .ufo--about-header .about-title .title
+ {
+            --h1Size: 48px;
+            --h1Height: 55px;
+            --h2Size: 40px;
+            --h2Height: 43px;
+            --h3Size: 24px;
+            --h3Height: 29px;
+            --h4Size: 20px;
+            --h4Height: 23px;
+            --p1Size: 16px;
+            --p1Height: 27px;
+            --p2Size: 16px;
+            --p2Height: 21px;
+        }
+    }
+
+
+
+
+        .ufo--cta-btn-wr .btn--cta {
+            
+            --ctaButtonSize: 14px;
+            --ctaButtonFont: Work Sans;
+            --ctaButtonColor: #778390;
+            --ctaButtonHeight: 17px;
+            --ctaButtonWeight: bold;
+            --ctaButtonStyle: normal;
+
+                --strokeStrength: 2px;
+                --strokeColor: #8D98A133
+        }
+</style></head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N24X7V9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><main>
+        <div class="ufo--portfolio-page theme_two">
+            <div class="ufo--container">
+
+
+    <div class="ufo--page-hero theme-default">
+
+
+
+    </div>
+
+
+                    <div class="ufo--about-page ufo--about-page-theme_two">
+                        <div class="ufo--about-header">
+                            <div class="about-title"><div class="about-title-container"><h1 class="title">ABOUT</h1></div></div>
+                            <div class="back" onclick="navigateToPage()">⟵ Back</div>
+                        </div>
+                    </div>
+
+                <div class="ufo--page-content ufo--home-page-content">
+                    <div class="ufo--user-projects-list">
+                        <div class="ufo--page-sections ufo--about-page-sections">
+                            <div class="ufo--case-study-container project_editor">
+
+
+
+        <section id="section-0" class="ufo--case-study-section p_section p_section--textandmedia flipped-false " style="padding-top: 0px;  padding-bottom: 60px;">
+            <div class="ufo--p-container-fluid ufo--p-multicols">
+
+                <div class="ufo--p-col media-col ">
+                    <div class="media-container display-mode--fit-margin  " style="padding-top: 0;  padding-bottom: 0;">
+        <div class="media-box  ">
+
+            <div class="image">
+                <img loading="lazy" src="about.jpeg" data-zoom alt="Me, marveling at the Grand Canyon" width="300">
+            </div>
+
+        </div>
+                            <div class="caption-box">
+                                <div class="media-caption">
+                                    <div class="text">
+                                            <p>Me, marveling at the Grand Canyon</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="ufo--p-col txt-col ">
+                    <div class="text-container">
+                            <h3>Research strategy for a large project</h3>
+                            <p>This is the story (not the whole story) of player experience research throughout the development of a AAA video game.</p>
+                            <p>I led the research initiative throughout this project, pre-through-post production. Overall it lasted nearly five years, included over 20 multi-day playtests, involved over 100 collaborators, and more than 200 research participants. I owned the entire playtesting process, from planning and conducting through analysis and presenting findings.</p>
+                            
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+                <section id="section-4" class="ufo--case-study-section p_section p_section--text" style="padding-top: 100px;  padding-bottom: 100px;">
+                    <div class="ufo--p-container-fluid">
+                        <div class="text-container">
+                                <h3>Building a research roadmap</h3>
+                                <p><strong><em>Research Advisor at dscout</em></strong></p><p><em>I am currently working in an advisory role at </em><a href="https://dscout.com/" target="_blank" rel="noopener noreferrer nofollow"><em>dscout</em></a><em>, a user research platform that helps companies meet their users wherever they are. We help UX researchers design studies focused on gathering rich qualitative data.</em></p><h3>Games User Research</h3><p><strong><em>UX Researcher at Deep Silver Volition</em></strong></p><p><em>From 2017-2022 I was the sole user researcher at this AAA game studio. I collaborated remotely with a group of researchers based in Europe on additional projects.</em></p><p><strong><em>UX Research Consultant to Little Ghost Games</em></strong></p><p><em>From 2018 to 2019 I helped this indie mobile game developer with user testing strategies and survey methods for their puzzle game.</em></p><p><strong><em>UX Research Consultant to Revival Productions</em></strong></p><p><em>In 2018 I helped this indie game studio plan a user research strategy for their first person space shooter, Overload.</em></p><h3>Library Collections</h3><p><strong><em>Collection Management Associate at University Library</em></strong></p><p><em>From 2014 to 2016 I worked in collection management at one of the largest research libraries in the United States. I was charged with processing estate donations and evaluating which items to add to the library's permanent collection. I also worked on the Google Book Search project and performed stabilization work on very old items.</em></p><h3>Anthropology</h3><p><strong><em>Research Assistant to Dr. Cris Hughes</em></strong></p><p><em>In 2013 I assisted Dr. Cris Hughes with a large funded study on the uses and limitations of genomic research in forensic science. My role in this project included designing and distributing surveys to over 2,000 respondents, coding data, and DNA sample collection.</em></p><h3>Social Psychology</h3><p><strong><em>Research Assistant to Dr. Patrick T. Vargas</em></strong></p><p><em>In 2013 I assisted Dr. Patrick T. Vargas with several studies in which I contributed priming manipulations, designed surveys, and coded data. The studies investigated the meaning of America for political conservatives and liberals, implicit persuasion in pharmaceutical marketing, and communities with low-impact development as the social norm.</em></p><p></p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+    <section id="section-9" class="ufo--case-study-section p_section p_section--columns" style="padding-top: 70px;  padding-bottom: 100px;">
+        <div class="ufo--p-container-fluid">
+            <div class="ufo--columns ufo--columns-3">
+                    <div class="ufo--column">
+                            <div class="media-container">
+    <div class="media-box">
+    <div class="image">
+        <img loading="lazy" src="https://storage.googleapis.com/uxfolio/6211257a6a240c0003890ffd/collections/15dbe4b6-5c96-4b31-853e-c617f517adb1/about/VHUUAexjWK95Buc3.jpeg" data-zoom alt="Image alt tag"  >
+    </div>
+    </div>
+                            </div>
+                        <h3>Historical research</h3><p>I'm a lifetime member of the Livingston County and Cullom Historical Societies. I am particularly interested in American rural domestic life and dress.</p>
+                    </div>
+                    <div class="ufo--column">
+                            <div class="media-container">
+    <div class="media-box">
+    <div class="image">
+        <img loading="lazy" src="https://storage.googleapis.com/uxfolio/6211257a6a240c0003890ffd/collections/15dbe4b6-5c96-4b31-853e-c617f517adb1/about/WPOtZOP9CYvA8atN.jpeg" data-zoom alt="Image alt tag"  >
+    </div>
+    </div>
+                            </div>
+                        <h3>Land stewardship</h3><p>I tend a 1.5 acre market garden with my husband. We sell organic fruits and vegetables to Chicago restaurants and local markets.</p>
+                    </div>
+                    <div class="ufo--column">
+                            <div class="media-container">
+    <div class="media-box">
+    <div class="image">
+        <img loading="lazy" src="https://storage.googleapis.com/uxfolio/6211257a6a240c0003890ffd/collections/15dbe4b6-5c96-4b31-853e-c617f517adb1/about/iJaXdfYrG9l9g6lE.jpeg" data-zoom alt="Image alt tag"  >
+    </div>
+    </div>
+                            </div>
+                        <h3>Visual art</h3><p>I have participated in over 10 group and solo art exhibitions. I work in a variety of media, and I once made a zoetrope from a hat box and a record player.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    <div class="profile-footer ">
+        <div class="ufo--container">
+            <div class="profile-footer-content">
+                        <a href="https://www.linkedin.com/in/laurelhartnettbrown/" target="_blank" rel="nofollow noopener" class="footer-url">linkedin</a>
+                        <a href="https://www.instagram.com/corncribarchive/" target="_blank" rel="nofollow noopener" class="footer-url">instagram</a>
+                        <a href="https://medium.com/@laurelhartnett" target="_blank" rel="nofollow noopener" class="footer-url">medium</a>
+            </div>
+        </div>
+    </div>
+<script>
+    function navigateToPage(page) {
+        let currentLocation = location.href.replace(location.search, "").replace('/p/', '/');
+        window.location = currentLocation.substring(0, currentLocation.lastIndexOf('/')) + (page ? '/' + page : '');
+    }
+    function navigateToProject(projectUrl) {
+        var location = window.location.origin;
+        location += projectUrl;
+        window.location.href = location;
+    }
+    function ctaIntNavigation(page) {
+        let currentLocation = location.href.replace(location.search, "");
+        currentLocation = currentLocation.lastIndexOf("/") === currentLocation.length -1
+            ? currentLocation.substring(0, currentLocation.lastIndexOf('/'))
+            : currentLocation;
+
+            window.location = currentLocation.substring(0, currentLocation.lastIndexOf('/')) + page;
+    }
+
+    document.querySelector('.ufo--page-navbar-toggle').onclick = function() {
+        this.classList.toggle('on');
+        document.querySelector('.ufo--page-navbar-container').classList.toggle('on');
+        document.querySelector('body').classList.toggle('nav-on');
+    }
+</script>
+
+        </div>
+
+</main>
+<script src="/dist/csv-f5bf6ba120db2b7d278b4c048e1329f8.js"></script>
+</body>
+</html>
+
+
+
+
+Early in the project, I created a flexible roadmap for testing based on milestone goals that allowed us to shift as the project changed over time. One of the main goals was to retain and expand our core target audience.
+I analyzed previous projects and research to inform strategies for this project: What did or did not work in the past? How could we use historical knowledge to help guide us moving forward?
+I worked with data scientists to create a telemetry collection strategy which grew throughout development as new features were added. 
+The roadmap changed over time, but using it as a foundation for our work was helpful for staying the course. Setting expectations with stakeholders is one of the most important aspects of conducting research for a project of this size and complexity, and the roadmap helped create a set of guidelines we referenced throughout development. These guidelines included timelines, deliverables, and testing cadence we flexibly followed.
+Iterate, evaluate, repeat
+As the project evolved, so did methods and approaches to testing certain content. I worked closely with design teams to continuously gauge design intention and testing needs. 
+After each report delivery, I gathered feedback and iterated on how the information could most optimally be presented to stakeholders. Reports became more concise, mindfully organized, interactive and HTML-based, and information rich. 
+Mixed methods for evolving project needs
+1:1 Interviews
+I used interviews at different stages of the project, specifically when there were objectives that seemed better suited to speaking with participants one on one than having them answer an impersonal survey question.
+Goals: At the early stages of the project, we wanted to broadly gauge what content players were gravitating toward or turning away from, to help prioritize what to focus on or potentially cut.
+At the discovery phase of this project, I conducted user interviews to see how players reacted to the overall tone of the content. Beyond the discovery phase, I iterated my interview methods to suit the project as it evolved.
+Process: I chose to conduct one-on-one interviews after participants played a chunk of content and answered survey questions to dig deeper into their feelings about the content they just played.
+Testing groups generally consisted of 8 to 16 participants per test session.
+Impact: Based on discovery interview data, there were features that were cut from the game due to low interest or negative feedback. Additionally, content that repeatedly received positive feedback was highlighted.
+After the initial discovery interview sessions, I continued to use interviews throughout development. Later in production I introduced chat-based interviews into my toolbox. As we were forced to shift to remote testing during the pandemic, Discord proved to be an incredibly useful tool for communicating with playtest participants. I found it to be an efficient interview tool, using both text and voice channels.
+Surveys
+Throughout development, surveys were the hardest working tool in the chest.
+Goals:
+Process:
+Impact:
+I used Limesurvey to host my surveys for this project. Limesurvey is great because it offers conditional display logic to create tailored survey experiences. Objectives were gathered and translated into measurements, and each question type and wording carefully considered. I used a mix of closed and open ended questions to easily quantify player sentiment, and gather richer context around each rating, ranking, or multiple choice question. Surveys were designed according to the needs of each particular test. 
+An example of survey cadence for an average test might look like this: Players complete an initial onboarding survey after the first few hours of gameplay. Players then complete a single survey multiple times over the course of the test, to assess a number of missions, to gather specific feedback in a timely manner, or to see how players learn over time. Finally, players complete a survey at the end of the test reflecting on the experience overall.
+We used surveys for exploration and evaluation at different stages in the project.
+After each test, results were discussed with stakeholders, often leading to new questions and ways to iterate on questions we asked before.
+
+User Journeys
+Goals:
+Process:
+Impact:
+Case studies were sometimes helpful in presenting player experiences of specific content in game, particularly non-linear content which included some form of player choice.
+This method was helpful in cases of players taking individual paths toward a certain goal.
+Designers were able to get a glimpse of each user's journey through this content step-by-step, along with survey answers and telemetry data which provided more context.
+
+Journey maps or user case studies can be helpful when users have multiple options and take diverging pathsCard Sorting
+Goals: The UX design team in charge of customization menu flows came to me wanting to know how users were navigating customization menus, if the choices were named intuitively and organized in a way that made sense.
+Process: I decided to have research participants complete two card sorting tasks. We used a hybrid card sort method, allowing users to organize specific menu hierarchies we prioritized as most important, and add their own headings if desired. The tasks were done in-person using physical paper prototypes, before ever playing any of the game content.
+Task 1 - We asked players to take all the tier 2 menu items and group them into categories that made sense to them. They were allowed to make as many groupings as they wished.
+In this task, we found that players sorted some items differently than they appeared in game, and were able to use this data to adjust menus accordingly.
+Task 2 - We asked players to assign tier 3 items to tier 1 categories.
+In task 2, we saw that many players assigned tier 3 items to different categories than the game. This showed us that two of the tier 1 categories were conceptually similar, and players felt that some tier 3 items belonged to one rather than the other.
+After the card sort, players engaged with the customization in the game and offered feedback on the experience. 
+Impact: Players felt that the order of some categories was unintuitive, and some options were confusing or did not make the changes they expected. The combination of the card sort data and the post-use feedback allowed us to see the customization menus from the player perspective, and adjust based on their experience.
+Eyetracking
+Goals: Sometimes we had test objectives that explicitly lent themselves to using eyetracking as a measurement. Examples of these kinds of objectives include assessing the visibility of signposting elements, seeing if players look at certain UI elements, or to assess understanding of mechanics (i.e. do players not understand this mechanic because it is confusing or do they not even know it exists because they miss the popup tutorial?)
+We set up eyetracking by default for all of the onsite playtests for this project. It was easy enough to set up and record, so even if we didn't have specific objectives that required eyetracking, it often acted as a backup method for questions that arose during testing. For example, if during a test we saw that most players weren't using a specific mechanic we expected them to use, we could go back into the eyetracking videos to see if players were actually looking at the tutorial or item in question or if they missed it completely.
+Process: We used TOBII 4C eyetrackers and overlayed the gaze on to OBS gameplay recordings. We hid the overlay from player screens and just recorded it into the OBS file to avoid distracting players! 
+Impact: Using time stamped GIF and video examples in our reports was incredibly helpful in illustrating issues that involved visibility of certain elements. 
+Feedback buttons
+Goals: We wanted a way to gather in the moment feedback without being invasive and pulling players out of the game experience. We adopted a method used by veteran games user researcher Jon Hopson (see his explanation here)
+Process:
+Impact: Buttons were mapped in telemetry to timestamped videos for easy analysis.
+
+---
+
+Reflection
+This was my first full game development cycle, and I learned so much! While I have touched many games during my career as a user researcher, this project was the first and only one I have seen through from beginning to end. I had to blaze my own trail for the duration of this project, as the only UX Researcher at the studio.
+Successes:
+I used the resources available to me wisely, keeping up with the GRUX SIG Discord which is full of industry researchers discussing methods and challenges.
+I drew a flexible roadmap for how testing would look throughout the project.
+I maintained close working relationships with content creators to best serve their needs for the project
+I iterated on how the results of each test were presented with the goal of providing stakeholders the most important information in the most digestible format.
+I adapted to project needs and provided content teams with actionable insights so they could make informed design decisions.
+
+Opportunities:
+Key Takeaways:
+Expectation management and scoping are the keys to successful stakeholder collaboration. Learn to say no and prioritize. Maintain research integrity.
+When you consider everything a learning opportunity, you will never stop improving. Experiment with new methods, and focus on the facts when reporting results. Research like this should be iterative, just like design.
+Experimentation is valuable, but don't reinvent the wheel for every test. Keep a record of all past objectives and measurements, and reuse them wherever applicable! If it ain't broke, don't fix it. Designing solid scales and optimally worded question prompts that you can reuse will get you a long way in iterative testing.
