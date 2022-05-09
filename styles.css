@@ -396,3 +396,7 @@ ufo--page-hero-image
   margin-right: auto;
   width: 30%;
 }
+
+.projexample figcaption {
+    text-align: center;
+}
