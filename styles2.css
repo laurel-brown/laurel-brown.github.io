@@ -459,7 +459,7 @@ template {
   display:flex;
   flex-direction:column;
   cursor:pointer;
-  margint-left:auto
+  margin-left:auto
  }
 
  .ufo--page-navbar-toggle.on {
@@ -2229,8 +2229,7 @@ template {
  height:100%;
  padding-top:100%;
  display:flex;
- overflow:hidden;
- -webkit-mask-image:-webkit-radial-gradient(#fff,#000)
+ overflow:hidden
 }
 .projects-list .project .image-container.overlay:after {
  content:"";
@@ -2958,36 +2957,9 @@ template {
   transform:rotate(359deg)
  }
 }
-.fa-rotate-90 {
- -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
- -webkit-transform:rotate(90deg);
- -ms-transform:rotate(90deg);
- transform:rotate(90deg)
-}
-.fa-rotate-180 {
- -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
- -webkit-transform:rotate(180deg);
- -ms-transform:rotate(180deg);
- transform:rotate(180deg)
-}
-.fa-rotate-270 {
- -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
- -webkit-transform:rotate(270deg);
- -ms-transform:rotate(270deg);
- transform:rotate(270deg)
-}
-.fa-flip-horizontal {
- -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
- -webkit-transform:scaleX(-1);
- -ms-transform:scaleX(-1);
- transform:scaleX(-1)
-}
-.fa-flip-vertical {
- -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
- -webkit-transform:scaleY(-1);
- -ms-transform:scaleY(-1);
- transform:scaleY(-1)
-}
+
+
+
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical,
 :root .fa-rotate-90,
@@ -11664,6 +11636,12 @@ body {
   padding:0
  }
 }
-.image-gallery.carousel .gallery-item[class*="--shadow"] {
- padding:20px 0
+
+.ufo--case-study-section p_section p_section--text {
+    font-family: var(--p1Font);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight);
+    font-style: var(--p1Style);
+    line-height: var(--p1Height);
+    color: var(--p1Color);
 }
